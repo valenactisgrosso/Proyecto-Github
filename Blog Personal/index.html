@@ -1,0 +1,126 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Personal</title>
+    <link rel="icon" href="icono/icon3.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <div>
+        <img src="imagenes/logo 2.png" alt="logo" width="80">
+        <h1>Colorimetría y Moda</h1>
+    </div>
+    <nav>
+        <ul>
+           <li><a href="index.html">Inicio</a></li>
+           <li><a href="#formulario">Formulario</a></li>
+           <li><a href="../index.html" target="_blank">Linktree</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <section class="main_image">
+        <div>
+            <h1>Descubrí Tus Colores Ideales</h1>
+            <p>Conoce la ciencia de la colorimetria para destacar tu estilo personal, <br> perfeccionar tu maquillaje y eligir prendas que complementen tu belleza</p>
+            <a href="#estaciones">Quiero saber más</a>
+        </div>
+    </section>
+    <section id="ultimos_arts" class="ultimos_arts">
+        <h2>Publicaciones destacadas</h2>
+        <div class="articulos">
+            <article>
+                <img src="imagenes/seasons4.png" alt="seasons" width="475">
+                <div class="card">
+                    <p class="tema">TEORIA DEL COLOR · 7 min</p>
+                    <h3>Conoce las paletas de colores estacionales</h3>
+                    <p>Descubrí como la teoria de las estaciones funciona y aprende que paleta complementa tu belleza natural.</p>
+                    <a href="articulo1.html">Seguí leyendo →</a>
+                </div>
+            </article>
+            <article>
+                <img src="imagenes/makeup3.png" alt="seasons" width="475">
+                <div class="card">
+                    <p class="tema">MAQUILLAJE · 5 min</p>
+                    <h3>Maquillate con colores acordes al subtono de tu piel</h3>
+                    <p>A la hora de encontrar un maquillaje que resalte tus rasgos, es fundamental saber el subtono de tu piel. </p>
+                    <a href="articulo2.html">Seguí leyendo →</a>
+                </div>
+            </article>
+            <article>
+                <img src="imagenes/clothes3.png" alt="seasons" width="475">
+                <div class="card">
+                    <p class="tema">ROPA · 5 min</p>
+                    <h3>Encontra inspiracion para tus outfits</h3>
+                    <p>Diseña un armario personalizado y acorde a tu paleta de colores estacional.</p>
+                    <a href="articulo3.html">Seguí leyendo →</a>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section id="estaciones" class="estaciones">
+        <h2>Descubrí tu paleta de colores estacional</h2>
+        <p style="font-size: 110%;">Aprende a incorporar los colores que complementen tus rasgos naturales en tu estilo del día a día</p>
+        <div>
+            <div class="cards_estaciones">
+                <img src="imagenes/spring.logo.png" alt="spring logo" width="70px">
+                <h3>Primavera</h3>
+                <p>Colores calidos y brillantes que reflejan frescura.</p>
+                <img class="dots" src="imagenes/spring2.png" alt="puntos de colores" width="110px">
+                <a href="primavera.html" style="background-color: rgb(248, 220, 129);">Segui explorando</a>
+            </div>
+            <div class="cards_estaciones">
+                <img src="imagenes/summer.logo.png" alt="summer logo" width="70px">
+                <h3>Verano</h3>
+                <p>Colores fríos y suaves, con baja saturación.</p>
+                <img class="dots" src="imagenes/summer2.png" alt="puntos de colores" width="110px">
+                <a href="summer.html" style="background-color: rgb(181, 216, 232);">Segui explorando</a>
+            </div>
+            <div class="cards_estaciones">
+                <img src="imagenes/autumn.logo.png" alt="autumn logo" width="70px">
+                <h3>Otoño</h3>
+                <p>Colores calidos e intensos, basados en los tonos tierra.</p>
+                <img class="dots" src="imagenes/autumn2.png" alt="puntos de colores" width="110px">
+                <a href="otoño.html" style="background-color: rgb(232, 168, 124);">Segui explorando</a>
+            </div>
+            <div class="cards_estaciones">
+                <img src="imagenes/winter.logo.png" alt="winter logo" width="70px">
+                <h3>Invierno</h3>
+                <p>Colores fríos e intensos, con un gran contraste.</p>
+                <img class="dots" src="imagenes/winter2.png" alt="puntos de colores" width="110px">
+                <a href="invierno.html" style="background-color: rgb(110, 126, 153);color: whitesmoke;">Segui explorando</a>
+            </div>
+        </div>
+    </section>
+    <section id="formulario" class="formulario">
+        <div>
+             <h2>Sumergite en la colorimetría</h2>
+             <h3>Suscribite para recibir información personalizada, recomendaciones de estilo y contenido exclusivo</h3>
+             <form action="/suscribirse" method="POST">
+                 <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                 <input type="email" id="email" name="email" placeholder="Mail" required>
+                 <button type="submit">Suscribirse</button>
+             </form>
+         </div>
+    </section>
+    <footer>
+        <div>
+            <img src="imagenes/logo 2.png" alt="logo" width="80">
+            <h1>Valentina Actis Grosso, 2025</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="https://www.instagram.com/_valenag/" target="_blank"><img src="imagenes/instagram.png" alt="ig" width="50px"></a></li>
+                <li><a href="https://www.instagram.com/_valenag/" target="_blank"><img src="imagenes/linkedin.png" alt="ig" width="50px"></a></li>
+           </ul>
+        </nav>
+    </footer>
+</body>

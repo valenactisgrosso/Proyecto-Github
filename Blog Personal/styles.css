@@ -1,0 +1,442 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+header div{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: 45px;
+}
+header img{
+    display: inline;
+}
+header h1{
+    color: rgb(53, 53, 53);
+    font-family: "Cormorant Garamond", serif;font-optical-sizing: auto;font-weight: 600;font-style: normal;font-size: 180%;
+}
+header nav{
+    margin-left: 50px;margin-right: 50px;
+}
+header nav ul {
+    display: flex;
+    gap: 20px;
+}
+header nav li {
+    list-style: none;
+}
+header nav a:link,
+header nav a:visited{
+    font-family: "Montserrat", sans-serif;font-optical-sizing: auto;font-weight: 370;font-style: normal;
+    text-decoration: none;
+    color: rgb(53, 53, 53);
+}
+header nav a:hover{
+    color: rgb(196, 126, 126);
+    font-family: "Montserrat", sans-serif;font-optical-sizing: auto;font-weight: 500;font-style: normal;
+}
+
+/* MAIN IMAGE */
+.main_image{
+    background-image: url(imagenes/header.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 60vh;
+}
+.main_image h1{
+    font-family: "Cormorant Garamond", serif;font-optical-sizing: auto;font-style: normal;
+    font-weight: 300;font-size: 300%;
+    margin-bottom: 20px; color: rgb(53, 53, 53);
+
+}
+.main_image p{
+    font-family: "Montserrat", sans-serif;font-optical-sizing: auto;font-weight: 330;font-style: normal;
+    font-size: 130%; 
+    color: rgb(53, 53, 53);
+    margin-bottom: 35px;
+}
+.main_image a:link,
+.main_image a:visited{
+    display: inline-block;
+    width: 240px;
+    padding: 15px 0px;
+    text-align: center;
+    background-color: rgb(212, 165, 165);
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    color: white; font-size: 100%;
+    font-family: "Montserrat", sans-serif;font-optical-sizing: auto;font-weight: 500;font-style: normal;
+}
+.main_image a:hover{
+    transform: scale(1.05);
+}
+.main_image div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ARTICULOS DESTACADOS */
+.ultimos_arts{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.ultimos_arts h2{
+    font-family: "Cormorant Garamond", serif;font-optical-sizing: auto;font-style: normal;
+    font-weight: 250;font-size: 180%;color: rgb(53, 53, 53);
+}
+.articulos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+.card{
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 12px 12px rgba(0, 0, 0, 0.05);
+    max-width: 475px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease-in-out;
+}
+.articulos article:hover{
+    transform: scale(1.02);
+}
+.articulos img{
+    border-radius: 6px;
+}
+.card .tema{
+    font-family: "Montserrat", sans-serif;font-optical-sizing: auto;font-weight: 400;font-style: normal;
+    text-align: left;font-size: 90%;color: rgb(107, 114, 128);
+    margin-left: 25px;margin-top: 20px;margin-bottom: 15px;margin-right: 25px;
+}
+.card h3{
+    font-family: "Cormorant Garamond", serif;font-optical-sizing: auto;font-style: normal;
+    font-weight: 500;font-size: 130%;color: rgb(53, 53, 53);
+    margin-left: 25px;text-align: left;margin-right: 25px;
+}
+.card p{
+    font-family: "Montserrat", sans-serif;font-optical-sizing: auto;font-weight: 350;font-style: normal;
+    text-align: left;font-size: 95%;color: rgb(53, 53, 53);
+    margin-left: 25px;margin-top: 15px;margin-bottom: 25px;margin-right: 25px
+}
+.card a{
+    font-family: "Montserrat", sans-serif;font-optical-sizing: auto;font-weight: 500;font-style: normal;
+    text-align: left;font-size: 98%;color: rgb(212, 165, 165);
+    margin-left: 25px;margin-bottom: 40px;margin-right: 25px;
+    text-decoration: none;
+}
+
+/* ESTACIONES ARTICULOS */
+.estaciones{
+    text-align: center;
+    background-color: rgb(253, 248, 245);
+    padding-bottom: 70px;
+}
+.estaciones h2{
+    font-family: "Cormorant Garamond", serif;font-optical-sizing: auto;font-style: normal;
+    font-weight: 250;font-size: 180%;color: rgb(53, 53, 53);
+    padding-top: 60px;
+}
+.estaciones p{
+    font-family: "Montserrat", sans-serif;font-optical-sizing: auto;font-weight: 350;font-style: normal;
+    font-size: 100%;color: rgb(53, 53, 53);margin-top: 20px;margin-bottom: 40px;
+}
+.estaciones div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+/*.contenedor_estaciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}*/
+.cards_estaciones {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    max-width: 270px;
+    padding: 25px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cards_estaciones h3{
+    font-family: "Cormorant Garamond", serif;font-optical-sizing: auto;font-style: normal;
+    font-weight: 500;font-size: 130%;color: rgb(53, 53, 53);margin-bottom: 0px;padding-bottom: 0px;
+}
+.cards_estaciones p{
+    font-family: "Montserrat", sans-serif;font-optical-sizing: auto;font-weight: 350;font-style: normal;
+    font-size: 100%;color: rgb(53, 53, 53);margin-top: 0px;margin-bottom: 0px;padding-top: 0px;
+}
+.cards_estaciones a{
+  display: inline-block;
+  padding: 10px 50px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: rgb(53, 53, 53);
+  font-family: "Montserrat", sans-serif;font-optical-sizing: auto;font-weight: 450;font-style: normal;
+  transition: transform 0.3s ease-in-out;
+}
+.cars_estaciones a:hover{
+    transform: scale(1.05);
+}
+
+/* FORMULARIO DE CONTACTO */
+.formulario{
+    text-align: center;
+    background-color: rgb(240, 245, 253);
+    padding: 50px;
+    min-height: 55vh;
+    display: flex;
+    justify-content: center;
+}
+.formulario div{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    width: 30vw;
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formulario h2{
+    font-family: "Cormorant Garamond", serif;font-optical-sizing: auto;font-style: normal;
+    font-weight: 500;font-size: 160%;color: rgb(53, 53, 53);margin-bottom: 20px;
+}
+.formulario h3{
+    font-family: "Montserrat", sans-serif;font-optical-sizing: auto;font-weight: 350;font-style: normal;
+    font-size: 100%;color: rgb(53, 53, 53);margin-bottom: 28px;  
+}
+.form {
+    font-family: "Montserrat", sans-serif;font-optical-sizing: auto;font-weight: 400;font-style: normal;
+    font-size: 95%;color: rgb(146, 148, 153);
+    width: 30vw;
+    padding: 12px 0px;
+    text-align: center;
+    border: 2px;
+    border-color: rgb(231, 228, 228);
+    border-style: solid;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.formulario a{
+    font-family: "Montserrat", sans-serif;font-optical-sizing: auto;font-weight: 500;font-style: normal;
+    font-size: 95%;color: rgb(146, 148, 153);
+    width: 30vw;
+    padding: 12px 0px;
+    text-align: center;
+    background-color: rgb(212, 165, 165); color: white;
+    border-radius: 5px;
+    margin-top: 28px;
+    text-decoration: none;
+}
+.formulario a:hover{
+    background-color: rgb(200, 144, 144)
+}
+.formulario form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.formulario label {
+  align-self: flex-start;
+  font-family: "Montserrat", sans-serif;
+  font-size: 90%;
+  margin-bottom: 6px;
+  color: rgb(53, 53, 53);
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+  font-family: "Montserrat", sans-serif;
+  font-size: 95%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1.5px solid rgb(231, 228, 228);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.formulario textarea {
+  resize: none;
+}
+
+.formulario button {
+  width: 100%;
+  padding: 14px;
+  background-color: rgb(212, 165, 165);
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 95%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.formulario button:hover {
+  background-color: rgb(200, 144, 144);
+}
+
+/* FOOTER */
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    min-height: 20vh;
+}
+footer div{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: 45px;
+}
+footer h1{
+    color: rgb(53, 53, 53);
+    font-family: "Cormorant Garamond", serif;font-optical-sizing: auto;font-weight: 500;font-style: normal;font-size: 180%;
+}
+footer nav{
+    margin-left: 50px;margin-right: 50px;
+}
+footer nav ul {
+    display: flex;
+    gap: 20px;
+}
+footer nav li {
+    list-style: none;
+}
+footer nav a:link,
+footer nav a:visited{
+    font-family: "Montserrat", sans-serif;font-optical-sizing: auto;font-weight: 370;font-style: normal;
+    text-decoration: none;
+    color: rgb(53, 53, 53);
+}
+footer nav a:hover{
+    color: rgb(196, 126, 126);
+    font-family: "Montserrat", sans-serif;font-optical-sizing: auto;font-weight: 500;font-style: normal;
+}
+
+/* ARTICULO 1 */
+.article_image{
+    background-image: url(imagenes/header.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 40vh;
+}
+.article_image p{
+    font-family: "Montserrat", sans-serif;font-optical-sizing: auto;font-weight: 400;font-style: normal;
+    font-size: 90%;color: rgb(107, 114, 128);
+    margin-top: 20px;margin-bottom: 15px;
+}
+.article_image h1{
+        font-family: "Cormorant Garamond", serif;font-optical-sizing: auto;font-style: normal;
+    font-weight: 300;font-size: 300%;
+    margin-bottom: 20px; color: rgb(53, 53, 53);
+}
+.article1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 150px;
+    background-color: rgb(253, 248, 245);
+}
+.text1{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    width: 60vw;
+    padding: 60px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+.text1 p{
+    margin-bottom: 15px;margin-top: 15px;
+    font-family: "Montserrat", sans-serif;font-optical-sizing: auto;font-weight: 400;font-style: normal;
+    font-size: 105%;color: rgb(53, 53, 53);
+}
+.text1 h3{
+    font-family: "Cormorant Garamond", serif;font-optical-sizing: auto;font-style: normal;
+    font-weight: 700;font-size: 160%; color: rgb(151, 94, 94);margin-top: 15px;
+}
+.text1 li{
+    margin-bottom: 15px;margin-top: 10px;margin-left: 50px;
+    font-family: "Montserrat", sans-serif;font-optical-sizing: auto;font-weight: 400;font-style: normal;
+    font-size: 105%;color: rgb(53, 53, 53);
+}
+.sidney{
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+.text1 img{
+    border-radius: 12px;margin-top: 10px;margin-bottom: 10px;margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+    .main_image{
+        flex-direction: column;padding: 45px 45px;
+    }
+    .ultimos_arts{
+        flex-direction: column;
+    }
+    .estaciones{
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 45px;
+        padding-bottom: 65px;
+    }
+    .cards_estaciones{
+        padding: 45px;
+    }
+    .formulario{
+        flex-direction: column;
+        align-items: center;  
+    }
+    .formulario div{
+        width: 60vw;
+    }
+    .form{
+        width: 50vw;
+    }
+    .formulario a{
+        width: 50vw;
+    }
+    .article_image{
+        flex-direction: column;
+        padding: 45px;
+    }
+}
